@@ -84,7 +84,7 @@ class TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $task = Task::find($id);
+        $task = Task::findOrFail($id);
         
         if(!$task){
             return Response::json([
@@ -95,7 +95,7 @@ class TaskController extends Controller
         $task->update($request->all());
         return Response::json([
             'message' => 'Task updated',
-            $task
+            'task' => $task
         ], 200);
     }
 
