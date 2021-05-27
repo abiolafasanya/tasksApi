@@ -2,7 +2,7 @@ GET http://localhost:8000/api/tasks HTTP/1.1
 Content-Type: 'application/json'
 
 ###
-GET http://localhost:8000/api/tasks/1 HTTP/1.1
+GET http://localhost:8000/api/tasks/2 HTTP/1.1
 Content-Type: 'application/json'
 
 ###
@@ -19,13 +19,13 @@ Accept: 'application/json'
 }
 ###
 
-PUT http://localhost:8000/api/tasks/2 HTTP/1.1
+PUT http://localhost:8000/api/tasks/3 HTTP/1.1
 Content-Type: : 'application/json'
 Accept: 'application/json'
 
 {
-    "task" : "Task One",
-    "description" : "change to task one"
+    "task" : "Task two",
+    "description" : "change to task two"
 }
 
 
